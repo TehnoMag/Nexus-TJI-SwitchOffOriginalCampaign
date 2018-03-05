@@ -1,0 +1,6 @@
+RULE	event GameStart
+	:action
+		//fix crash after new game
+		uGetPlayersFleet():uSetParent(uGetStoryDepot());
+	:end
+END
